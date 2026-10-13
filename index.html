@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173f35">
+<meta name="description" content="Excellent Child Academy school management dashboard">
+<title>Excellent Child Academy | School Portal</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><div class="brand-mark">E</div><div><strong>Excellent Child</strong><span>ACADEMY PORTAL</span></div></div>
+    <div class="side-label">WORKSPACE</div>
+    <nav id="nav">
+      <button class="nav-item active" data-page="dashboard"><span>▦</span> Dashboard</button>
+      <button class="nav-item" data-page="students"><span>♙</span> Students <b id="studentNavCount">0</b></button>
+      <button class="nav-item" data-page="teachers"><span>♧</span> Teachers</button>
+      <button class="nav-item" data-page="attendance"><span>✓</span> Attendance</button>
+      <button class="nav-item" data-page="fees"><span>＄</span> Fees & payments</button>
+      <button class="nav-item" data-page="results"><span>▤</span> Results</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="help-card"><div class="help-icon">✦</div><strong>Need a hand?</strong><p>Keep your school records organized in one place.</p><button id="helpBtn">View quick guide ↗</button></div><div class="user-mini"><div class="avatar">AD</div><div><strong>School Admin</strong><span>Administrator</span></div><span class="dots">•••</span></div></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><button class="mobile-menu" id="menuBtn" aria-label="Open menu">☰</button><div class="crumb">School portal <span>/</span> <strong id="crumbPage">Dashboard</strong></div><div class="top-actions"><div class="today" id="today"></div><button class="icon-btn" title="Notifications" id="notifyBtn">♧<i></i></button><div class="avatar">AD</div></div></header>
+    <section class="content">
+      <div class="welcome-row"><div><p class="eyebrow">TUESDAY · SCHOOL OVERVIEW</p><h1 id="pageTitle">Good morning, Admin <span>✦</span></h1><p class="subheading" id="pageSubtitle">Here’s what’s happening at your school today.</p></div><button class="primary-btn" id="quickAdd">＋ Add new student</button></div>
+      <div id="pageContent"></div>
+      <footer>© <span id="year"></span> Excellent Child Academy <span>•</span> School Portal <span class="demo-tag">DEMO VERSION</span></footer>
+    </section>
+  </main>
+</div>
+<div class="modal-backdrop" id="modalBackdrop" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-head"><div><p class="eyebrow">SCHOOL RECORDS</p><h2 id="modalTitle">Add student</h2></div><button class="close-btn" id="closeModal" aria-label="Close">×</button></div><form id="recordForm"><div id="formFields" class="form-grid"></div><div class="modal-actions"><button type="button" class="secondary-btn" id="cancelModal">Cancel</button><button type="submit" class="primary-btn">Save record</button></div></form></div></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "excellent-child-academy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Responsive school management dashboard starter for Excellent Child Academy",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}
